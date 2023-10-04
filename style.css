@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("https://www.southernliving.com/thmb/CzuBalMhp_jRAeZ0ytI6NB6znJw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Hourglass-MirageC-Getty-Images-2000-36c7e2433db941eb9908a9fde84fdbd9.jpg")
+    no-repeat;
+    background-size: cover;
+
+}
+
+.clock{
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24vh;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1),0px 10px 20px rgba(0,0,0,0.7);
+}
+
+.clock h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.clock span{
+    position: relative;
+    top:-13%;
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media  screen and (max-width:400px){
+
+    .clock{
+        max-width: 260px;
+        padding:5px;
+    }
+    .clock h1{
+        font-size: 1.9rem;
+    }
+
+
+}
+@media  screen and (min-width:275px) and (max-width:400px){
+
+    .clock{
+        max-width: 260px;
+        padding:5px;
+    }
+    .clock h1{
+        font-size: 2.6rem;
+    }
+}
